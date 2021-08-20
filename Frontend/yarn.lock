@@ -2294,7 +2294,7 @@ classnames@2.2.6:
   resolved "https://registry.npmjs.org/classnames/-/classnames-2.2.6.tgz"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
 
-classnames@^2.2.5:
+classnames@^2.2.5, classnames@^2.3.1:
   version "2.3.1"
   resolved "https://registry.npmjs.org/classnames/-/classnames-2.3.1.tgz"
   integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
@@ -4157,7 +4157,6 @@ notistack@^1.0.10:
   version "1.0.10"
   resolved "https://registry.npmjs.org/notistack/-/notistack-1.0.10.tgz"
   integrity sha512-z0y4jJaVtOoH3kc3GtNUlhNTY+5LE04QDeLVujX3VPhhzg67zw055mZjrBF+nzpv3V9aiPNph1EgRU4+t8kQTQ==
-
   dependencies:
     clsx "^1.1.0"
     hoist-non-react-statics "^3.3.0"
@@ -4632,6 +4631,13 @@ react-beautiful-dnd@13.0.0:
     react-redux "^7.1.1"
     redux "^4.0.4"
     use-memo-one "^1.1.1"
+
+react-before-after-slider-component@^0.7.4:
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/react-before-after-slider-component/-/react-before-after-slider-component-0.7.4.tgz#a684745cbc847114e1d710075f9f701d1fdae073"
+  integrity sha512-KkTBnun7TtNYhGwROqnBSc9yjY+RSk/Xm08u8Mci/KBrdNrKpa77c2nhw/GIbONXk9k4hR7Me7ogZLy3KN2LEg==
+  dependencies:
+    classnames "^2.3.1"
 
 react-chartjs-2@^3.0.3:
   version "3.0.3"
