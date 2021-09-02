@@ -69,22 +69,6 @@ const Heads = (props) => {
         rel="stylesheet"
         href="https://fonts.googleapis.com/icon?family=Material+Icons"
       />
-
-      {/* <!-- Hotjar Tracking Code for https://stag.keepup.org.za/ --> */}
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2584146,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    `,
-        }}
-      />
     </NextHead>
   );
 };
