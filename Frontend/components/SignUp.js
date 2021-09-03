@@ -152,13 +152,7 @@ export default function SignUP() {
           </Grid>
           <form>
             <Grid container justifyContent="center" spacing={0}>
-              <Grid
-                item
-                xs={12}
-                sm={8}
-                md={10}
-                style={{ justifySelf: "center", position: "relative" }}
-              >
+              <Grid item xs={12} style={{ textAlign: "-webkit-center" }}>
                 <Paper
                   elevation={3}
                   style={{
