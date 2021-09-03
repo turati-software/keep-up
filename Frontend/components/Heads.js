@@ -64,7 +64,7 @@ const Heads = (props) => {
         rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
       />
-      <link href='https://use.fontawesome.com/releases/v5.12.0/css/all.css' />
+      <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" />
       <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/icon?family=Material+Icons"

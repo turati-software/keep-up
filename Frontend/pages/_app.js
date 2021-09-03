@@ -12,32 +12,48 @@ import "react-toastify/dist/ReactToastify.css";
 
 import "../static/styles.css";
 export default function MyApp(props) {
-	const { Component, pageProps } = props;
+  const { Component, pageProps } = props;
 
-	useEffect(() => {
-		const jssStyles = document.querySelector("#jss-server-side");
-		if (jssStyles) {
-			jssStyles.parentElement.removeChild(jssStyles);
-		}
-	}, []);
+  useEffect(() => {
+    const jssStyles = document.querySelector("#jss-server-side");
+    if (jssStyles) {
+      jssStyles.parentElement.removeChild(jssStyles);
+    }
+  }, []);
 
-	return (
-		<>
-			<NextHead />
-			<SnackbarProvider maxSnack={3}>
-				<ThemeProvider theme={theme}>
-					<CssBaseline />
-					<AppWrapper>
-						<ToastContainer />
-						<Component {...pageProps} />
-					</AppWrapper>
-				</ThemeProvider>
-			</SnackbarProvider>
-		</>
-	);
+  return (
+    <>
+      <NextHead>
+        {/* Hotjar Tracking Code for https://stag.keepup.org.za/  */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2584146,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    `,
+          }}
+        />
+      </NextHead>
+      <SnackbarProvider maxSnack={3}>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <AppWrapper>
+            <ToastContainer />
+            <Component {...pageProps} />
+          </AppWrapper>
+        </ThemeProvider>
+      </SnackbarProvider>
+    </>
+  );
 }
 
 MyApp.propTypes = {
-	Component: PropTypes.elementType.isRequired,
-	pageProps: PropTypes.object.isRequired,
+  Component: PropTypes.elementType.isRequired,
+  pageProps: PropTypes.object.isRequired,
 };
